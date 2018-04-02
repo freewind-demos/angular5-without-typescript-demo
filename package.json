@@ -1,5 +1,5 @@
 {
-  "name": "angular2-without-typescript-demo",
+  "name": "angular5-without-typescript-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@angular/common": "^5.2.9",
-    "@angular/compiler": "^5.2.9",
-    "@angular/core": "^5.2.9",
-    "@angular/platform-browser": "^5.2.9",
-    "@angular/platform-browser-dynamic": "^5.2.9",
-    "core-js": "^2.5.4",
-    "reflect-metadata": "^0.1.12",
-    "rxjs": "^5.5.8",
-    "zone.js": "^0.8.23"
+    "@angular/common": "5.2.9",
+    "@angular/compiler": "5.2.9",
+    "@angular/core": "5.2.9",
+    "@angular/platform-browser": "5.2.9",
+    "@angular/platform-browser-dynamic": "5.2.9",
+    "core-js": "2.5.4",
+    "reflect-metadata": "0.1.12",
+    "rxjs": "5.5.8",
+    "zone.js": "0.8.23"
   }
 }

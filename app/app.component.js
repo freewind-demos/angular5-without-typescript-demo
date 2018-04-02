@@ -1,15 +1,9 @@
-var HelloApp = ng.core
-    .Component({
-        selector: 'hello-app',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    .Class({
-        constructor: function () {
-        },
-        title : 'Angular Hello World Demo'
-    });
+const AppComponent = function () {
+    this.title = 'Angular Hello World Demo'
+};
 
-document.addEventListener('DOMContentLoaded', function() {
-    ng.platformBrowserDynamic.bootstrap(HelloApp);
-});
+AppComponent.annotations = [new ng.core.Component({
+    selector: 'hello-app',
+    templateUrl: './app/app.component.html',
+    styleUrls: ['./app/app.component.css']
+})];

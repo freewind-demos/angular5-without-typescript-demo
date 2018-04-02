@@ -1,18 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+const AppModule = function () {
+};
 
+AppModule.annotations = [
+    new ng.core.NgModule({
+        imports: [ng.platformBrowser.BrowserModule],
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+];
 
-import { AppComponent } from './app.component';
-
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+document.addEventListener('DOMContentLoaded', function() {
+    ng.platformBrowserDynamic.platformBrowserDynamic().bootstrapModule(AppModule);
+});
